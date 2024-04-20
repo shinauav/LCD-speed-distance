@@ -64,8 +64,8 @@ int loadState()
 
 void write_static_text()
 {
-    const char speed_local[] = "Brzina:  m/s";
-    const char razdaljina[] = "Predjeno:     m";
+    const char speed_local[] = "Speed:  m/s";
+    const char razdaljina[] = "Covered:     m";
 
     SSD1315_SetCursorPosition(1, 0);
     SSD1315_WriteString((uint8_t*) speed_local, sizeof(speed_local) - 1);
