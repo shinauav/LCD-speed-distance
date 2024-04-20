@@ -65,12 +65,12 @@ int loadState()
 void write_static_text()
 {
     const char speed_local[] = "Speed:  m/s";
-    const char razdaljina[] = "Covered:     m";
+    const char distance_local[] = "Covered:     m";
 
     SSD1315_SetCursorPosition(1, 0);
     SSD1315_WriteString((uint8_t*) speed_local, sizeof(speed_local) - 1);
     SSD1315_SetCursorPosition(2, 0);
-    SSD1315_WriteString((uint8_t*) razdaljina, sizeof(razdaljina) - 1);
+    SSD1315_WriteString((uint8_t*) distance_local, sizeof(distance_local) - 1);
 
 }
 
